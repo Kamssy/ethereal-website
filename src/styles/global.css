@@ -1,0 +1,172 @@
+/* ─── CSS Variables ─── */
+:root {
+  --color-bg: #0b1a0e;
+  --color-bg-2: #111a0f;
+  --color-earth: #1e1509;
+  --color-sage: #a8c57a;
+  --color-gold: #c9a84c;
+  --color-cream: #f5f0e8;
+  --color-muted: #8a9e7a;
+  --color-white: #ffffff;
+  --color-overlay: rgba(11, 26, 14, 0.65);
+
+  --font-heading: 'Cormorant Garamond', serif;
+  --font-sub: 'Playfair Display', serif;
+  --font-body: 'DM Sans', sans-serif;
+
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 8rem;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --transition: all 0.3s ease;
+}
+
+/* ─── Light Mode Overrides ─── */
+.app.light {
+  --color-bg: #f5f0e8;
+  --color-bg-2: #ede8df;
+  --color-earth: #e0dbd2;
+  --color-cream: #1a1a1a;
+  --color-muted: #555555;
+}
+
+/* ─── Reset ─── */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-cream);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: var(--font-body);
+}
+
+/* ─── Scroll Reveal Utility ─── */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── Shared Utilities ─── */
+.section {
+  padding: var(--space-lg) var(--space-md);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-sm);
+}
+
+.section__eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--color-sage);
+  margin-bottom: 0.8rem;
+}
+
+.section__title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  color: var(--color-cream);
+  margin-bottom: var(--space-md);
+  line-height: 1.15;
+}
+
+/* ─── Shared Button Styles ─── */
+.btn {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  padding: 0.9rem 2rem;
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  transition: var(--transition);
+  font-weight: 500;
+}
+
+.btn--primary {
+  background: var(--color-sage);
+  color: var(--color-earth);
+  font-weight: 600;
+}
+
+.btn--primary:hover {
+  background: var(--color-gold);
+}
+
+.btn--outline {
+  border: 1px solid var(--color-sage);
+  color: var(--color-sage);
+  background: transparent;
+}
+
+.btn--outline:hover {
+  background: var(--color-sage);
+  color: var(--color-earth);
+}
+
+/* ─── Newsletter Form (shared between Home + Contact) ─── */
+.newsletter__form {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.newsletter__form input {
+  padding: 0.85rem 1.2rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(168, 197, 122, 0.3);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--color-cream);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  min-width: 260px;
+  transition: var(--transition);
+}
+
+.newsletter__form input:focus {
+  outline: none;
+  border-color: var(--color-sage);
+}
