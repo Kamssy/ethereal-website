@@ -2,27 +2,27 @@ import { useState } from "react";
 
 const images = [
   {
-    src: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=700&auto=format&fit=crop",
+    src: "/assets/images/forest-path.jpg",
     alt: "Forest Path",
   },
   {
-    src: "https://images.unsplash.com/photo-1439405326854-014607f694d7?w=700&auto=format&fit=crop",
+    src: "/assets/images/waterfall2.jpg",
     alt: "Waterfall",
   },
   {
-    src: "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=700&auto=format&fit=crop",
+    src: "/assets/images/ocean-reef.jpg",
     alt: "Ocean Reef",
   },
   {
-    src: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=700&auto=format&fit=crop",
+    src: "/assets/images/tropical.jpg",
     alt: "Tropical Beach",
   },
   {
-    src: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=700&auto=format&fit=crop",
+    src: "/assets/images/mountains.jpg",
     alt: "Mountain Range",
   },
   {
-    src: "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=700&auto=format&fit=crop",
+    src: "/assets/images/valley-vista.jpg",
     alt: "Valley Vista",
   },
 ];
