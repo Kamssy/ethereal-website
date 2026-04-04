@@ -1,0 +1,233 @@
+/* ─── Contact Hero ─── */
+.contact__hero {
+  position: relative;
+  min-height: 72vh;
+  display: flex;
+  align-items: flex-end;
+  background: url('https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1600&auto=format&fit=crop')
+    center / cover no-repeat;
+  padding-bottom: var(--space-lg);
+}
+
+.contact__hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    var(--color-bg) 8%,
+    rgba(11, 26, 14, 0.5) 55%,
+    transparent 100%
+  );
+}
+
+.contact__hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.contact__hero-content h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(2.8rem, 5.5vw, 5rem);
+  color: var(--color-cream);
+  line-height: 1.08;
+  margin: 0.6rem 0 1.2rem;
+  font-weight: 700;
+}
+
+.contact__hero-content h1 em {
+  color: var(--color-sage);
+  font-style: italic;
+}
+
+.contact__hero-sub {
+  color: var(--color-muted);
+  font-size: 1rem;
+  max-width: 500px;
+  line-height: 1.85;
+}
+
+/* ─── Contact Body ─── */
+.contact__body {
+  background: var(--color-bg);
+}
+
+.contact__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: var(--space-lg);
+  align-items: start;
+}
+
+/* ─── Contact Info ─── */
+.contact__info h2 {
+  font-family: var(--font-sub);
+  font-size: 1.9rem;
+  color: var(--color-cream);
+  margin-bottom: 0.8rem;
+}
+
+.contact__info-intro {
+  color: var(--color-muted);
+  font-size: 0.92rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  max-width: 340px;
+}
+
+.contact__details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.contact__detail {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.contact__detail-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.contact__detail h4 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-sage);
+  margin-bottom: 0.25rem;
+}
+
+.contact__detail p {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+}
+
+/* ─── Contact Form ─── */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  background: var(--color-bg-2);
+  padding: 2.5rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(168, 197, 122, 0.1);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.form-group label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-sage);
+}
+
+.form-group input,
+.form-group textarea {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(168, 197, 122, 0.18);
+  border-radius: var(--radius-sm);
+  padding: 0.88rem 1rem;
+  color: var(--color-cream);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  resize: vertical;
+  transition: var(--transition);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(138, 158, 122, 0.5);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-sage);
+  background: rgba(168, 197, 122, 0.04);
+}
+
+.form-error {
+  color: #e07878;
+  font-size: 0.78rem;
+}
+
+/* ─── Success State ─── */
+.contact__success {
+  text-align: center;
+  padding: 3.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background: var(--color-bg-2);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(168, 197, 122, 0.2);
+}
+
+.contact__success span {
+  font-size: 3.2rem;
+}
+
+.contact__success h3 {
+  font-family: var(--font-sub);
+  font-size: 1.9rem;
+  color: var(--color-cream);
+}
+
+.contact__success p {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  max-width: 340px;
+  line-height: 1.75;
+}
+
+/* ─── Newsletter Strip ─── */
+.contact__newsletter {
+  background: var(--color-earth);
+  border-top: 1px solid rgba(168, 197, 122, 0.15);
+  text-align: center;
+}
+
+.contact__newsletter h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  color: var(--color-cream);
+  margin-bottom: 0.6rem;
+}
+
+.contact__newsletter p {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.75;
+}
+
+.contact__newsletter .newsletter__form {
+  justify-content: center;
+}
+
+.contact__newsletter .newsletter__success {
+  justify-content: center;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 860px) {
+  .contact__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact__info-intro {
+    max-width: 100%;
+  }
+}
