@@ -5,7 +5,7 @@ import "../../styles/Contact.css";
 const contactDetails = [
   { icon: "📍", label: "Location", value: "Lagos, Nigeria (Global Reach)" },
   { icon: "✉️", label: "Email", value: "hello@ethereal-wonders.com" },
-  { icon: "📞", label: "Phone", value: "+234 800 000 0000" },
+  { icon: "📞", label: "Phone", value: "+234 9075 9810" },
   { icon: "🕐", label: "Response Time", value: "Within 24 hours" },
 ];
 
