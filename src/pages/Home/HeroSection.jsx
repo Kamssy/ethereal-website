@@ -9,7 +9,7 @@ function HeroSection() {
         muted
         loop
         playsInline
-        src="https://videos.pexels.com/video-files/854100/854100-hd_1920_1080_25fps.mp4"
+        src="/assets/videos/hero.mp4"
       />
       <div className="hero__overlay" />
 
@@ -34,10 +34,10 @@ function HeroSection() {
         </div>
       </div>
 
-      <div className="hero__scroll-hint">
+      {/* <div className="hero__scroll-hint">
         <span>Scroll</span>
         <div className="hero__scroll-line" />
-      </div>
+      </div> */}
     </section>
   );
 }

@@ -1,21 +1,39 @@
 const wonders = [
   {
-    img: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=700&auto=format&fit=crop",
+    img: "/assets/images/aurora-borealis.jpg",
     tag: "Arctic",
     title: "Aurora Borealis",
     desc: "The sky becomes a living canvas of emerald and violet light, dancing across the Scandinavian night.",
   },
   {
-    img: "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=700&auto=format&fit=crop",
+    img: "/assets/images/great-barrier-reef.jpg",
     tag: "Ocean",
     title: "Great Barrier Reef",
     desc: "The world's largest coral ecosystem, teeming with extraordinary life beneath crystal turquoise waters.",
   },
   {
-    img: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=700&auto=format&fit=crop",
+    img: "/assets/images/amazon-rainforest.jpg",
     tag: "Forest",
     title: "Amazon Rainforest",
     desc: "Earth's lungs — a vast, primordial wilderness of unimaginable biodiversity and ancient beauty.",
+  },
+  {
+    img: "/assets/images/sahara.jpg",
+    tag: "Desert",
+    title: "Sahara Desert",
+    desc: "An ocean of golden dunes stretching endlessly beneath a blazing sun — the world's largest hot desert, ancient and untamed.",
+  },
+  {
+    img: "/assets/images/patagonia.jpg",
+    tag: "Mountain",
+    title: "Patagonia",
+    desc: "At the edge of the world, jagged granite towers pierce the sky above glacial lakes of impossible blue.",
+  },
+  {
+    img: "/assets/images/waterfall-.jpg",
+    tag: "Waterfall",
+    title: "Angel Falls",
+    desc: "The world's highest uninterrupted waterfall, plunging 979 metres from the Venezuelan highlands into the jungle below.",
   },
 ];
 
