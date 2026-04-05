@@ -55,7 +55,7 @@ function WonderCard({ img, tag, title, desc }) {
 
 function FeaturedSection() {
   return (
-    <section className="featured section">
+    <section className="featured section" id="featured-wonders">
       <div className="container">
         <p className="section__eyebrow">Featured Wonders</p>
         <h2 className="section__title">Nature's Finest Masterpieces</h2>
