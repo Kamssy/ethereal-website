@@ -1,7 +1,18 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from "react-router-dom";
 import '../styles/Footer.css'
 
 function Footer() {
+  const navigate = useNavigate();
+
+  const scrollToWonder = () => {
+    navigate("/");
+    setTimeout(() => {
+      document
+        .getElementById("featured-wonders")
+        ?.scrollIntoView({ behavior: "smooth" });
+    }, 100);
+  };
+
   return (
     <footer className="footer">
       <div className="footer__top container">
@@ -13,7 +24,7 @@ function Footer() {
             finest wonders. Every page, a journey.
           </p>
           <div className="footer__tagline">
-            <span>— Curated with reverence since 2025</span>
+            <span>— Curated with reverence since 2001</span>
           </div>
         </div>
 
@@ -27,11 +38,11 @@ function Footer() {
 
         <div className="footer__nav">
           <h4>Wonders</h4>
-          <a href="#">Aurora Borealis</a>
-          <a href="#">Amazon Rainforest</a>
-          <a href="#">Great Barrier Reef</a>
-          <a href="#">Sahara Desert</a>
-          <a href="#">Patagonia</a>
+          <a href="#" onClick={(e) => { e.preventDefault(); scrollToWonder() }}>Aurora Borealis</a>
+          <a href="#" onClick={(e) => { e.preventDefault(); scrollToWonder() }}>Amazon Rainforest</a>
+          <a href="#" onClick={(e) => { e.preventDefault(); scrollToWonder() }}>Great Barrier Reef</a>
+          <a href="#" onClick={(e) => { e.preventDefault(); scrollToWonder() }}>Sahara Desert</a>
+          <a href="#" onClick={(e) => { e.preventDefault(); scrollToWonder() }}>Patagonia</a>
         </div>
 
         <div className="footer__social">
@@ -44,7 +55,7 @@ function Footer() {
       </div>
 
       <div className="footer__bottom container">
-        <p>© 2025 Ethereal. Crafted with reverence for nature.</p>
+        <p>&copy; 2026 Ethereal. Crafted with reverence for nature.</p>
         <div className="footer__bottom-links">
           <a href="#">Privacy Policy</a>
           <span>·</span>
