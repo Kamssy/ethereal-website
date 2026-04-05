@@ -4,7 +4,7 @@
   min-height: 100vh;
   display: flex;
   align-items: flex-end;
-  background: url('/assets/images/contact.jpg')
+  background: url('/assets/images/picture1.jpg')
     center / cover no-repeat;
   padding-bottom: var(--space-lg);
 }
