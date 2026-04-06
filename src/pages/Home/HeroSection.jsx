@@ -9,7 +9,7 @@ function HeroSection() {
         muted
         loop
         playsInline
-        src="/assets/videos/hero.mp4"
+        src="/assets/videos/hero1.mp4"
       />
       <div className="hero__overlay" />
 
